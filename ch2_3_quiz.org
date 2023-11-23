@@ -1,0 +1,126 @@
+#+TITLE: Python Ch 2 and 3 Quiz
+
+#+OPTIONS: toc:nil
+
+* Chapter 2
+
+** Write a program that assigns a message to a variable and then prints that message.
+
+** Which of the following are valid variable names?
+   ~dad is great~
+
+   ~Dad_is_great!~
+
+   ~2days~
+
+   ~face2face~
+
+   ~def~
+
+** Which of the following are valid strings? If not, why not?
+   ~'Dad's quizzes are the best!'~
+
+   ~"""They're~\\
+   ~clever, don't ya think?"""~
+
+   ~"""They're~\\
+   ~clever, don't ya think?"""~
+
+   ~`This is fine`~
+
+   ~"But, is this~\\
+   ~one okay?"~
+
+   ~'''Fun's around the corner'''~
+
+   ~"""She said "no", that's not okay"""~
+
+   ~"My friend's had a 'bad' day."~
+
+** What do the following string methods do?
+   ~title()~
+
+   ~upper()~
+
+   ~lower()~
+
+** Consider the following code,
+
+   #+begin_src Python
+     first_name = "David"
+     last_name = "Sankel"
+   #+end_src
+
+   Define a variable ~full_name~ consisting of the first name and the second name
+   separated by a space using an f-string.
+
+** What does ~\n~ mean when within a string? What about ~\t~?
+
+** What is the output of the following program?
+
+   #+begin_src Python
+     s = " four forks "
+     print( s.rstrip() )
+     print( s.lstrip() )
+     print( s.strip() )
+     print( s.removeprefix("four") )
+     print( s.removeprefix(" f") )
+   #+end_src
+
+** What is the output of the following program?
+   #+begin_src Python
+     a = 3
+     b = 2
+     print( a + b )
+     print( b - a )
+     print( a * b )
+     print( a ** b )
+     print( b / b )
+     print( 1 / b )
+   #+end_src
+
+** Write a program that assigns 1000000 to a variable using digit grouping.
+
+** Which of the following are examples of comments?
+
+   ~"""This function returns the square root of 5"""~
+
+   ~% The code below is ugly~
+
+   ~# The code below is ugly~
+
+** Which of the following is not in the Zen of Python?
+
+   1. Now is better than never
+   2. Complicated is better than complex.
+   3. Simple is better than complex.
+   4. Comprehension is better than confusion.
+
+* Chapter 3
+** Write a program that creates a variable ~family~ that is assigned to a list of the first names of all the children in our house, oldest to youngest.
+
+** Write a program that outputs the first element of ~family~
+
+** Write a program that outputs the last element of ~family~
+
+** Write a program that outputs the second element of ~family~
+
+** Write a program that outputs the second-to-last element of ~family~
+
+** Write a program that removes the third element of ~family~
+
+** Write a program that adds 'Kahn' to the end of ~family~
+
+** Write a program that inserts 'Kahn' after 'Sarah' in ~family~
+
+** Write a program that removes the last element of ~family~
+
+** Write a program that removes the second element of ~family~
+
+** Write a program that removes 'Christina' from ~family~ without mentioning an index
+
+** What is the difference between the ~sort()~ and ~sorted()~ string methods?
+
+** Write a program that prints ~family~ in reverse sorted order.
+
+** Write a program that outputs the length of ~family~.
