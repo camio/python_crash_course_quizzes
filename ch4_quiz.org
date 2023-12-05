@@ -1,0 +1,132 @@
+#+TITLE: Python Chapter 4 Quiz
+
+#+OPTIONS: toc:nil ^:{} html-postamble:nil
+#+HTML_DOCTYPE: html5
+
+* Review
+
+** Which of the following are valid strings? If not, why not?
+
+   1. ~`"A valid string"`~
+   2. ~'A `valid` string?'~
+   3. ~"""A "valid" string?"""~
+
+** Write a program that removes the last element of a list named ~snap_crackle~ without using an index
+
+** What is the output of the following program?
+
+   #+begin_src Python
+     a = 3
+     b = 2
+     print( a ** b )
+     print( b / b )
+     print( 2 / b )
+     print( 1 / (a+b)*(b**1) )
+   #+end_src
+
+** Which of the following is not in the Zen of Python?
+
+   1. Now is better than ever.
+   2. Complex is better than complicated.
+   3. Simple is better than complex.
+   4. Errors should never pass silently.
+   5. Readability is important.
+
+** What is the difference between the ~sort()~ and ~sorted()~ string methods?
+
+* Chapter 4
+
+** Use a ~for~ loop to print out each name in a list called ~family~
+
+** Is the following code valid? If not, why not?
+   #+begin_src python
+     for i in [1, 2, 3]:
+     print(i)
+   #+end_src
+
+** What is the output of the following programs?
+
+  1.
+    #+begin_src python
+      for i in range(0):
+        print(i)
+    #+end_src
+  2.
+    #+begin_src python
+      for i in range(1, 4):
+        print(i)
+    #+end_src
+  3.
+    #+begin_src python
+      for i in range(1, -1):
+        print(i)
+    #+end_src
+
+** Write a program that creates a list ~numbers~ starting with ~-2~, ~-1~ all way to ~1000~.
+
+** Write a program that outputs the value of ~i²-1~ for even numbers ~i~ between ~0~ and ~20~
+
+** Write a program that creates the variable ~f~ which that assigned to the sum of the even numbers between ~6~ and ~24~.
+
+** Write a program that outputs the maximum value of a list ~l~.
+
+** Use a list comprehension to create a list ~cubes~ of the first 10 cubes.
+
+** Given a list ~family~ that is the first names of all children in our house, oldest to youngest, what is the output of the following?
+
+  1. ~family[-3]~
+  2. ~family[:-3]~
+  3. ~family[1:-3]~
+  4. ~family[:3]~
+  5. ~family[4:3]~
+  6. ~family[-3:-2]~
+  7. ~family[:]~
+
+** What is the output of the following program?
+
+   #+begin_src python
+     dinner = ["porage", 'meat', 'juice']
+     dinner2 = dinner
+     dinner3 = dinner2[:]
+     dinner2.sort()
+     dinner3.sort()
+     dinner3.reverse()
+     print(dinner)
+     print(dinner2)
+     print(dinner3)
+   #+end_src
+
+** When would one want to use a ~tuple~ instead of a ~list~?
+
+** What does /immutable/ mean?
+
+** Are the following programs valid? If so, what is the output?
+   1. ~print( (2,) )~
+   2.
+     #+begin_src python
+       t = (1, 2)
+       t[0] = 1
+       print(t)
+     #+end_src
+   3.
+     #+begin_src python
+       t = [1, 2]
+       t[0] = 1
+       print(t)
+     #+end_src
+   4.
+     #+begin_src python
+       t = (1, 2)
+       t = (1, 1)
+       print(t)
+     #+end_src
+
+** What does PEP stand for?
+
+** Which PEP is a style guide?
+
+** How many spaces should be used to indent in Python?
+
+** What does the Python style guide recommend for a maximum line length?
+
+** What does the Python style guide recommend for a maximum comment length?

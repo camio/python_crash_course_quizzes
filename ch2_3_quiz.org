@@ -1,6 +1,7 @@
 #+TITLE: Python Ch 2 and 3 Quiz
 
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil ^:{} html-postamble:nil
+#+HTML_DOCTYPE: html5
 
 * Chapter 2
 
@@ -46,7 +47,7 @@
 
 ** Consider the following code,
 
-   #+begin_src Python
+   #+begin_src python
      first_name = "David"
      last_name = "Sankel"
    #+end_src
@@ -58,7 +59,7 @@
 
 ** What is the output of the following program?
 
-   #+begin_src Python
+   #+begin_src python
      s = " four forks "
      print( s.rstrip() )
      print( s.lstrip() )
@@ -68,7 +69,7 @@
    #+end_src
 
 ** What is the output of the following program?
-   #+begin_src Python
+   #+begin_src python
      a = 3
      b = 2
      print( a + b )

@@ -1,0 +1,49 @@
+
+#+TITLE: Python Chapter 6 Quiz
+
+#+OPTIONS: toc:nil ^:{} html-postamble:nil
+#+HTML_DOCTYPE: html5
+
+* Review
+
+* Chapter 6
+
+** Create a dictionary ~computer_0~ that has a field called ~memory~ set to 5000000 (using digit separators) and a field called ~brand~ set to "IBM".
+** Output the ~brand~ field of ~computer_0~.
+** Create an empty dictionary ~computer_0~ and set the ~memory~ and ~brand~ fields on separate lines.
+** Write code that does the following:
+   - if ~computer_0~'s ~brand~ is "ibm" (with any case) set the brand to "IBM" (all upper case)
+** Write code that removes the ~brand~ key of a dictionary ~computer_3~
+** What happens if you try to access a key of a dictionary that doesn't exist?
+** Write a program that creates a variable ~foo~ that is set to ~computer_0~'s brand if it has that key and "unknown" if it doesn't. This should be done on one line.
+** Use a for loop to loop through the keys and values of ~computer_0~. It should output the key followed by a ~": ",~ followed by the value for each key-value pair.
+** Use a for loop to efficiently loop through the keys of ~computer_0~ and print them.
+** What does ~foo~ represent in ~for foo in computer_0~?
+** Is there another way to write that loop?
+** Write a program that outputs every field (key and value) of ~computer_0~ in alphabetical order of the keys
+** Consider the following code:
+   #+begin_src python
+     people = [ { "name": "David", "age": 42 },
+                { "name": "carlana", "age": 41 },
+                { "name": "Anthony", "age": 3 },
+              ]
+   #+end_src
+
+   Write a program that outputs the "name" of every element in ~people~ where
+   every word in the name is capitalized.
+
+** What is a set used for? Write some code that uses a set.
+** What is nesting?
+** Create a ~pizza~ dictionary that includes a 'crust' key set to a string and a 'toppings' key that is set to a list of strings.
+** Consider the following code:
+
+   #+begin_src python
+     full_names = [ { "person": "David", "full_name": "David Joseph Sankel" },
+                    { "person": "carlana", "full_name": "Carla Ana Martin Targa" },
+                    { "person": "Anthony", "full_name": "Anthony Jack Sankel"  },
+                    { "person": "Waldo", "full_name": "Waldo"  },
+                  ]
+   #+end_src
+
+   Write a program that outputs the full name of every person in the ~people~ list as defined in an earlier question.
+** Is it possible to have a dictionary within a dictionary? If so, write an example of one

@@ -1,0 +1,71 @@
+#+TITLE: Python Chapter 5 Quiz
+
+#+OPTIONS: toc:nil ^:{} html-postamble:nil
+#+HTML_DOCTYPE: html5
+
+* Review
+** Write a program that removes the last element of a list named ~king_of~ without using an index
+** What is the output of the following programs?
+  1.
+    #+begin_src Python
+      for i in range(0):
+        print(i)
+    #+end_src
+  2.
+    #+begin_src Python
+      for i in range(1, 4):
+        print(i)
+    #+end_src
+  3.
+    #+begin_src Python
+      for i in range(1, -1):
+        print(i)
+    #+end_src
+** Write a program that creates the variable ~f~ which that assigned to the sum of the even numbers between ~4~ and ~30~.
+** What is the output of the following program?
+
+   #+begin_src Python
+     dinner = ["porage", 'meat', 'juice']
+     dinner2 = dinner
+     dinner3 = dinner2[:]
+     dinner2.sort()
+     dinner3.sort()
+     dinner3.reverse()
+     print(dinner)
+     print(dinner2)
+     print(dinner3)
+   #+end_src
+** What does /immutable/ mean?
+** What does PEP stand for?
+** What does the Python style guide recommend for a maximum comment length?
+* Chapter 5
+** Write a program that goes through each element of a string list called ~strings~ and outputs "There is a great presence." if one of the strings is "David".
+** Do the same as above, except output "There is a great presence" of one of the strings is "david" with any capitalization (e.g. "David", "dAVId", etc.)
+** Write a program that outputs "Bad luck!" if a variable named ~number~ is not set to ~5~.
+** Write a program that outputs "Old or dead" if a variable named ~age~ is less than ~0~ or greater than ~95~.
+** Create a variable called ~nasty~ that is set to ~True~ if ~"Dirt"~ is in a list called ~ingredients~ and false otherwise. Make it one line.
+** Create a variable called ~yummy~ that is set to ~True~ if ~"Dirt"~ is not in a list called ~ingredients~ and false otherwise. Make it one line.
+** Write a program that outputs "Young" if a variable ~age~ is set to a number less than or equal to 42. Otherwise, it should output "Old"
+** Write a program that outputs:
+   - "Young" if ~age~ is a number less than or equal to 42.
+   - "Youngish" if the ~age~ is greater than 42, but less then 60.
+   - "Old as dirt" otherwise
+** Write a program that outputs "so sad" if a list ~happy_things~ is empty. Don't use ~len~.
+** Consider the following code:
+
+   #+begin_src Python
+     available_colors = [ 'blue', 'green', 'red', 'puse' ]
+     requested_colors = [ 'red', 'puse', 'brown' ]
+   #+end_src
+
+   Write a program that outputs "Found <color>" when a requested color is
+   available and "Didn't find <color>" when the requested color isn't available.
+   "<color>" should be the color being requested.
+
+** Ordinal numbers
+   - Store the numbers 1 through 9 in a list.
+   - Loop through the list
+   - Use an ~if-elif-else~ chain inside the loop to print the proper ordinal
+     ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th
+     7th 8th 9th".
+** How many spaces does PEP8 recommend to use around conditional operators like ~==~?
