@@ -6,6 +6,18 @@
 
 * Review
 
+** Create a variable called ~nasty~ that is set to ~True~ if ~"Dirt"~ is in a list called ~ingredients~ and false otherwise. Make it one line.
+** Write a program that outputs:
+   - "Young" if ~age~ is a number less than or equal to 42.
+   - "Youngish" if the ~age~ is greater than 42, but less then 60.
+   - "Old as dirt" otherwise
+** Ordinal numbers
+   - Store the numbers 1 through 9 in a list.
+   - Loop through the list
+   - Use an ~if-elif-else~ chain inside the loop to print the proper ordinal
+     ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th
+     7th 8th 9th".
+
 * Chapter 6
 
 ** Create a dictionary ~computer_0~ that has a field called ~memory~ set to 5000000 (using digit separators) and a field called ~brand~ set to "IBM".

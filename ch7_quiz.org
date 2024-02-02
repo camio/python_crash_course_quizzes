@@ -1,0 +1,67 @@
+#+TITLE: Python Chapter 7 Quiz
+
+#+OPTIONS: toc:nil ^:{} html-postamble:nil
+#+HTML_DOCTYPE: html5
+
+* Review
+** Assuming ~computer_0~ is a dictionary, write code that does the following:
+   - if ~computer_0~'s ~brand~ is "ibm" (with any case) set the brand to "IBM" (all upper case)
+** Use a for loop to efficiently loop through the keys of ~computer_0~ and print them.
+** Consider the following code:
+
+   #+begin_src python
+     people = [ { "name": "David", "age": 42 },
+                { "name": "carlana", "age": 41 },
+                { "name": "Anthony", "age": 3 },
+              ]
+     full_names = [ { "person": "David", "full_name": "David Joseph Sankel" },
+                    { "person": "carlana", "full_name": "Carla Ana Martin Targa" },
+                    { "person": "Anthony", "full_name": "Anthony Jack Sankel"  },
+                    { "person": "Waldo", "full_name": "Waldo"  },
+                  ]
+   #+end_src
+
+   Write a program that outputs the full name of every person in the ~people~ list.
+
+* Chapter 7
+
+** Write a program that prompts the user for their name and then prints "Hello " followed by their name.
+
+** Write a program that prompts the user for their age and prints "You're old" if the age is greater than 18.
+
+** Write a program that asks the user for a number and then reports whether it is a multiple of 10 or not.
+
+** Write a program that asks the user multiple times for the secret number and exits when the user enters 7. uses a ~while~ loop to implement this.
+
+** What do ~break~ and ~continue~ do within a loop?
+
+** Write an example of an infinite loop.
+
+** Write a loop that removes the last element of a list until it is empty.
+
+** Write a program that acts as a name/age lookup.
+   Here is an example interaction with the program
+
+   #+begin_example
+   Name? David
+   Age? 42
+
+   Would you like to add another (Y/N)? Y
+   Name? Carlana
+   Age? 41
+
+   Would you like to add another (Y/N)? N
+
+   Whose age would you like to lookup? David
+   David is 42
+
+   Would you like to lookup another (Y/N)? Y
+
+   Whose age would you like to lookup? Gilbert
+   I don't know how old Gilbert is!
+
+   Would you like to lookup another (Y/N)? N
+   Good bye!
+   #+end_example
+
+   The program should use a dictionary mapping names to ages.
