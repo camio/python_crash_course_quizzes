@@ -1,0 +1,100 @@
+#+TITLE: Python Chapter 8 Quiz
+
+#+OPTIONS: toc:nil ^:{} html-postamble:nil
+#+HTML_DOCTYPE: html5
+
+* Review
+** Write a program that removes 'Christina' from ~family~ without mentioning an index where
+   #+begin_src python
+     family = ['Dad', 'Christina', 'Mom', 'Peter']
+   #+end_src
+** Write a program that creates a list ~numbers~ starting with ~-2~, ~-1~ all way to ~1000~.
+** Write a program that outputs "so sad" if a list ~happy_things~ is empty. Don't use ~len~.
+** Create an empty dictionary ~computer_0~ and set the ~memory~ and ~brand~ fields on separate lines.
+** Create a ~pizza~ dictionary that includes a 'crust' key set to a string and a 'toppings' key that is set to a list of strings.
+** Write a program that prompts the user for their age and prints "You're old" if the age is greater than 18.
+* Chapter 8
+** Consider the following code:
+   #+begin_src python
+     def greet(greeting):
+         print(greeting)
+
+     greet('Hi, Anthony!')
+   #+end_src
+
+*** What is the parameter?
+*** What is the argument?
+*** Is it a positional argument or a keyword argument?
+
+** Write ~add_entry~ function
+   - it takes two arguments, ~name~ and ~age~
+   - ~name~ should have a /default value/ of "Unknown"
+   - it should simply print out ~name~ and ~age~
+
+** Write a call to ~add_entry~ using keyword arguments where ~name~ is "Dad" and ~age~ is 42.
+** Write a call to ~add_entry~ using keyword arguments ~age~ is 12 and the /default value/ is used for ~name~.
+** Write a function ~plus~ that returns the sum of its two arguments.
+** Write a function ~build~
+   - It takes in a ~type~ string and an optional ~value~ integer
+   - If the optional value is specified, it returns a dictionary with keys "type" and "value" set to the passed parameters.
+   - If the optional value is not specified, it returns a dictionary with keys "type" set the passed "type" parameter.
+** What is the output?
+   #+begin_src python :results output
+     def f1(l):
+         del l[1]
+     def f2(l):
+         l = [4,5,6]
+     def f3(i):
+         i = 4
+
+     l = [1,2,3]
+     f1(l)
+     print(l)
+
+     l = [1,2,3]
+     f2(l)
+     print(l)
+
+     i = 3
+     f3(i)
+     print(i)
+   #+end_src
+
+** Write a function ~print_all~
+   - It should take an arbitrary number of arguments
+   - It should print each argument on its own line
+** Can positional and arbitrary arguments be mixed? If so, how?
+** Write a function ~ship_stats~
+   - It's first argument is the ship name
+   - The following arguments are arbitrary keyword arguments
+   - The output should look like the following
+
+   Example:
+   #+begin_src console
+     >>> ship_stats(name="Enterprise", ammo="low")
+     ## Enterprise
+     ammo: low
+
+     >>> ship_stats("Titanic", people="rich and poor", destination="sea bottom")
+     ## Titanic
+     people: rich and poor
+     destination: sea bottom
+   #+end_src
+
+** Write a statement that imports a module called ~pizza~
+** Write a statement that imports functions ~jazz~ and ~has~ from a module called ~pizza~
+** Write a statement that imports a functions ~jazz~, but calls it ~has~, from a module called ~pizza~
+** Write a statement that imports a module called ~pizza~, but calls it ~p~
+** Write a statement that imports all functions from a module called ~pizza~
+** Find everything wrong with the style of this code block
+   #+begin_src python
+     def HelloWorld(name = 'Jessie'):
+         print(f"Hello {name}!")
+
+     def test(foo, bar
+             baz):
+         """Does nothing"""
+         pass
+
+     import sys
+   #+end_src
